@@ -40,12 +40,14 @@ class Tree {
 
 **BreadthFirstSearch Method (BFS) :** Is width wise searching/collecting data - 
 
-Collects the parent's **all childrens** (in the order of top to bottom of width wise level), if Child have any nodes then it collects all it's child nodes of that node.
+Collects the parent's **all childrens** (in the order of top to bottom of width wise level), if Child has any nodes then it collects all it's child nodes. If again those children has sub node/child then it traverse there and continue left side to right side of the child 
+
 if not then travel is end
+
 
 *Example: [1,[2,[5,6],3,4,[7,8]]] BFS will be [1,2,3,4,5,6,7,8]
 
-*Real time example - Orders of any orgnasation position - CEO, CTO, CPO, Engineers, other workers
+*Real time example - Orders of any orgnisation position - CEO, CTO, CPO, Engineers, other workers
 - GPS Navigation systems: Navigation systems such as the Google Maps, which can give directions to reach from one place to another use BFS. They take your location to be the source node and your destination as the destination node on the graph. (A city can be represented as a graph by taking landmarks as nodes and the roads as the edges that connect the nodes in the graph.) BFS is applied and the shortest route is generated which is used to give directions or real time navigation.
 
 
@@ -71,11 +73,10 @@ class Tree {
 
 **Depth First Search Method (DFS) :** Is Height wise searching/collecting data - 
 
-It select the root(parent) then if root(parent) have node/nodes(children) then it travel to it's left side first node(child node). 
+First It selects the root(parent) then if root(parent) has any sub node/nodes(childrens) then it travels to it's left side first node(child node). 
 
-If that child node contains any sub children node/nodes then it collect that node. if that node again contain then again it travel to that node and collect it.
+If that child node contains any sub children node/nodes then it collects that node and check its sub node if that node is contained then again it travels to that down node and collects it. If not then points back to parent relative child node and continues
 
-If not then it travel back to level up and find it's relative node and it's child node. and continue..
 
 *Example : [1,[2,[5,6],3,4,[7,8]]]  DFS will be [1,2,5,6,3,4,,7,8]
 
