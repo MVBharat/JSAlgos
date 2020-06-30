@@ -1,7 +1,53 @@
 # Algos
 
-Algorithm and tricky programs practice 
+Algorithm and tricky programs 
 
+# DataStrucure
+
+Ways of organizing information with optimal ‘runtime complexity’ for adding or removing records.
+
+
+   ###### Different type of Data Structures
+
+- Queue
+- Stack
+- LinkedList
+- Tree
+
+**Queue** -  also called as **FIFO(First In First Out)**
+
+The Process of enqueuing data at rear and dequeuing data from the front this way of accessing data structure is known as Queue.
+
+In other words The Process of adding data from one side(left end) and remove data from the other side(right end).
+
+
+
+In Queue data is always added at one end and remove at another end
+
+   ###### Javascript Methods to handle Queue
+   
+- Adding Queue in Javascript   -->  array.unshift()
+
+- Removing Queue in Javascript -->   array.pop()
+
+class Queue {
+
+    constructor(){
+        this.data = []
+    }
+
+    add(record){
+        this.data.unshift(record)
+    }
+    remove(){
+        return this.data.pop()
+    }
+}
+   
+   ####  Circular Queue 
+   
+   The queue starts at one end and ending or the last point is connected back to the initial point or any point on the same list of the queue to make it circle
+    
 **Tree**
 
 A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
