@@ -46,7 +46,7 @@ class Queue {
    
    ####  Circular Queue 
    
-   The queue starts at one end and ending or the last point is connected back to the initial point or any point on the same list of the queue to make it circle
+   The queue starts at one end and ending or the last point is connected back to the initial point to make it circle
     
 **Tree**
 
